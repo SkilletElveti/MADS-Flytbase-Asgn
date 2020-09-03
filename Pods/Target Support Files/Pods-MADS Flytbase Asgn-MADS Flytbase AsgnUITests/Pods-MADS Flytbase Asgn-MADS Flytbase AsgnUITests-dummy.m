@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_MADS_Flytbase_Asgn_MADS_Flytbase_AsgnUITests : NSObject
+@end
+@implementation PodsDummy_Pods_MADS_Flytbase_Asgn_MADS_Flytbase_AsgnUITests
+@end

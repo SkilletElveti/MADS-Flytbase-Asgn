@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CBB1DC2E58B32265BB546CA /* Pods_MADS_Flytbase_Asgn_MADS_Flytbase_AsgnUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B0D412E2A8630B0B32620B /* Pods_MADS_Flytbase_Asgn_MADS_Flytbase_AsgnUITests.framework */; };
+		3358B15DDB752D2B75DDD4AA /* Pods_MADS_Flytbase_Asgn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F08A971DEC5027A44E7A0898 /* Pods_MADS_Flytbase_Asgn.framework */; };
+		5A0A6E2125010BEA00186940 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0A6E2025010BEA00186940 /* History.swift */; };
+		5A0A6E232501142900186940 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0A6E222501142900186940 /* HistoryViewController.swift */; };
+		5A0A6E25250118A800186940 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A0A6E24250118A700186940 /* GoogleService-Info.plist */; };
+		5A0A6E2725011E0300186940 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0A6E2625011E0300186940 /* LoginViewController.swift */; };
+		5A0A6E2925013A7600186940 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0A6E2825013A7600186940 /* Constant.swift */; };
+		5A68C98C2500BD7F00D52057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A68C98B2500BD7F00D52057 /* AppDelegate.swift */; };
+		5A68C9902500BD7F00D52057 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A68C98F2500BD7F00D52057 /* ViewController.swift */; };
+		5A68C9932500BD7F00D52057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A68C9912500BD7F00D52057 /* Main.storyboard */; };
+		5A68C9952500BD8200D52057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A68C9942500BD8200D52057 /* Assets.xcassets */; };
+		5A68C9982500BD8200D52057 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A68C9962500BD8200D52057 /* LaunchScreen.storyboard */; };
+		5A68C9A32500BD8200D52057 /* MADS_Flytbase_AsgnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A68C9A22500BD8200D52057 /* MADS_Flytbase_AsgnTests.swift */; };
+		5A68C9AE2500BD8200D52057 /* MADS_Flytbase_AsgnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A68C9AD2500BD8200D52057 /* MADS_Flytbase_AsgnUITests.swift */; };
+		D6DFDA073EC6F4B4592D17C5 /* Pods_MADS_Flytbase_AsgnTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F26140BE84818941B1576769 /* Pods_MADS_Flytbase_AsgnTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5A68C99F2500BD8200D52057 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A68C9802500BD7F00D52057 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A68C9872500BD7F00D52057;
+			remoteInfo = "MADS Flytbase Asgn";
+		};
+		5A68C9AA2500BD8200D52057 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A68C9802500BD7F00D52057 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A68C9872500BD7F00D52057;
+			remoteInfo = "MADS Flytbase Asgn";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A0A6E2025010BEA00186940 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		5A0A6E222501142900186940 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		5A0A6E24250118A700186940 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A0A6E2625011E0300186940 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5A0A6E2825013A7600186940 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		5A68C9882500BD7F00D52057 /* MADS Flytbase Asgn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MADS Flytbase Asgn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A68C98B2500BD7F00D52057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A68C98F2500BD7F00D52057 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5A68C9922500BD7F00D52057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A68C9942500BD8200D52057 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A68C9972500BD8200D52057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A68C9992500BD8200D52057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A68C99E2500BD8200D52057 /* MADS Flytbase AsgnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MADS Flytbase AsgnTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A68C9A22500BD8200D52057 /* MADS_Flytbase_AsgnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MADS_Flytbase_AsgnTests.swift; sourceTree = "<group>"; };
+		5A68C9A42500BD8200D52057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A68C9A92500BD8200D52057 /* MADS Flytbase AsgnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MADS Flytbase AsgnUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A68C9AD2500BD8200D52057 /* MADS_Flytbase_AsgnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MADS_Flytbase_AsgnUITests.swift; sourceTree = "<group>"; };
+		5A68C9AF2500BD8200D52057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60A23F1BA5930A50567130AD /* Pods-MADS Flytbase AsgnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MADS Flytbase AsgnTests.release.xcconfig"; path = "Target Support Files/Pods-MADS Flytbase AsgnTests/Pods-MADS Flytbase AsgnTests.release.xcconfig"; sourceTree = "<group>"; };
+		61C392C0B723D3AFD9A934A0 /* Pods-MADS Flytbase AsgnTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MADS Flytbase AsgnTests.debug.xcconfig"; path = "Target Support Files/Pods-MADS Flytbase AsgnTests/Pods-MADS Flytbase AsgnTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C58972395D197B445A6B6E6 /* Pods-MADS Flytbase Asgn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MADS Flytbase Asgn.debug.xcconfig"; path = "Target Support Files/Pods-MADS Flytbase Asgn/Pods-MADS Flytbase Asgn.debug.xcconfig"; sourceTree = "<group>"; };
+		7F87FF5879CC8609F7E9014F /* Pods-MADS Flytbase Asgn-MADS Flytbase AsgnUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MADS Flytbase Asgn-MADS Flytbase AsgnUITests.debug.xcconfig"; path = "Target Support Files/Pods-MADS Flytbase Asgn-MADS Flytbase AsgnUITests/Pods-MADS Flytbase Asgn-MADS Flytbase AsgnUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C5B0D412E2A8630B0B32620B /* Pods_MADS_Flytbase_Asgn_MADS_Flytbase_AsgnUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MADS_Flytbase_Asgn_MADS_Flytbase_AsgnUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA0AA99F306B1A37ED8D4C6 /* Pods-MADS Flytbase Asgn-MADS Flytbase AsgnUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MADS Flytbase Asgn-MADS Flytbase AsgnUITests.release.xcconfig"; path = "Target Support Files/Pods-MADS Flytbase Asgn-MADS Flytbase AsgnUITests/Pods-MADS Flytbase Asgn-MADS Flytbase AsgnUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F08A971DEC5027A44E7A0898 /* Pods_MADS_Flytbase_Asgn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MADS_Flytbase_Asgn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F26140BE84818941B1576769 /* Pods_MADS_Flytbase_AsgnTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MADS_Flytbase_AsgnTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7617E3BFBE9E6DF5A335453 /* Pods-MADS Flytbase Asgn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MADS Flytbase Asgn.release.xcconfig"; path = "Target Support Files/Pods-MADS Flytbase Asgn/Pods-MADS Flytbase Asgn.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A68C9852500BD7F00D52057 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3358B15DDB752D2B75DDD4AA /* Pods_MADS_Flytbase_Asgn.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A68C99B2500BD8200D52057 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6DFDA073EC6F4B4592D17C5 /* Pods_MADS_Flytbase_AsgnTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A68C9A62500BD8200D52057 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CBB1DC2E58B32265BB546CA /* Pods_MADS_Flytbase_Asgn_MADS_Flytbase_AsgnUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12B4F2898C9E6F0064663E7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C58972395D197B445A6B6E6 /* Pods-MADS Flytbase Asgn.debug.xcconfig */,
+				F7617E3BFBE9E6DF5A335453 /* Pods-MADS Flytbase Asgn.release.xcconfig */,
+				7F87FF5879CC8609F7E9014F /* Pods-MADS Flytbase Asgn-MADS Flytbase AsgnUITests.debug.xcconfig */,
+				ECA0AA99F306B1A37ED8D4C6 /* Pods-MADS Flytbase Asgn-MADS Flytbase AsgnUITests.release.xcconfig */,
+				61C392C0B723D3AFD9A934A0 /* Pods-MADS Flytbase AsgnTests.debug.xcconfig */,
+				60A23F1BA5930A50567130AD /* Pods-MADS Flytbase AsgnTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		44259546DFDB2848D8734142 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F08A971DEC5027A44E7A0898 /* Pods_MADS_Flytbase_Asgn.framework */,
+				C5B0D412E2A8630B0B32620B /* Pods_MADS_Flytbase_Asgn_MADS_Flytbase_AsgnUITests.framework */,
+				F26140BE84818941B1576769 /* Pods_MADS_Flytbase_AsgnTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A68C97F2500BD7F00D52057 = {
+			isa = PBXGroup;
+			children = (
+				5A68C98A2500BD7F00D52057 /* MADS Flytbase Asgn */,
+				5A68C9A12500BD8200D52057 /* MADS Flytbase AsgnTests */,
+				5A68C9AC2500BD8200D52057 /* MADS Flytbase AsgnUITests */,
+				5A68C9892500BD7F00D52057 /* Products */,
+				12B4F2898C9E6F0064663E7C /* Pods */,
+				44259546DFDB2848D8734142 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5A68C9892500BD7F00D52057 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A68C9882500BD7F00D52057 /* MADS Flytbase Asgn.app */,
+				5A68C99E2500BD8200D52057 /* MADS Flytbase AsgnTests.xctest */,
+				5A68C9A92500BD8200D52057 /* MADS Flytbase AsgnUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A68C98A2500BD7F00D52057 /* MADS Flytbase Asgn */ = {
+			isa = PBXGroup;
+			children = (
+				5A0A6E24250118A700186940 /* GoogleService-Info.plist */,
+				5A68C98B2500BD7F00D52057 /* AppDelegate.swift */,
+				5A68C98F2500BD7F00D52057 /* ViewController.swift */,
+				5A68C9912500BD7F00D52057 /* Main.storyboard */,
+				5A68C9942500BD8200D52057 /* Assets.xcassets */,
+				5A68C9962500BD8200D52057 /* LaunchScreen.storyboard */,
+				5A68C9992500BD8200D52057 /* Info.plist */,
+				5A0A6E2025010BEA00186940 /* History.swift */,
+				5A0A6E222501142900186940 /* HistoryViewController.swift */,
+				5A0A6E2625011E0300186940 /* LoginViewController.swift */,
+				5A0A6E2825013A7600186940 /* Constant.swift */,
+			);
+			path = "MADS Flytbase Asgn";
+			sourceTree = "<group>";
+		};
+		5A68C9A12500BD8200D52057 /* MADS Flytbase AsgnTests */ = {
+			isa = PBXGroup;
+			children = (
+				5A68C9A22500BD8200D52057 /* MADS_Flytbase_AsgnTests.swift */,
+				5A68C9A42500BD8200D52057 /* Info.plist */,
+			);
+			path = "MADS Flytbase AsgnTests";
+			sourceTree = "<group>";
+		};
+		5A68C9AC2500BD8200D52057 /* MADS Flytbase AsgnUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5A68C9AD2500BD8200D52057 /* MADS_Flytbase_AsgnUITests.swift */,
+				5A68C9AF2500BD8200D52057 /* Info.plist */,
+			);
+			path = "MADS Flytbase AsgnUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A68C9872500BD7F00D52057 /* MADS Flytbase Asgn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A68C9B22500BD8200D52057 /* Build configuration list for PBXNativeTarget "MADS Flytbase Asgn" */;
+			buildPhases = (
+				FC36CA6C2A1C660D5770282E /* [CP] Check Pods Manifest.lock */,
+				5A68C9842500BD7F00D52057 /* Sources */,
+				5A68C9852500BD7F00D52057 /* Frameworks */,
+				5A68C9862500BD7F00D52057 /* Resources */,
+				2041333FBCF806ACB418F93A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MADS Flytbase Asgn";
+			productName = "MADS Flytbase Asgn";
+			productReference = 5A68C9882500BD7F00D52057 /* MADS Flytbase Asgn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5A68C99D2500BD8200D52057 /* MADS Flytbase AsgnTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A68C9B52500BD8200D52057 /* Build configuration list for PBXNativeTarget "MADS Flytbase AsgnTests" */;
+			buildPhases = (
+				E5755363FD9CD250BA9CE5F8 /* [CP] Check Pods Manifest.lock */,
+				5A68C99A2500BD8200D52057 /* Sources */,
+				5A68C99B2500BD8200D52057 /* Frameworks */,
+				5A68C99C2500BD8200D52057 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A68C9A02500BD8200D52057 /* PBXTargetDependency */,
+			);
+			name = "MADS Flytbase AsgnTests";
+			productName = "MADS Flytbase AsgnTests";
+			productReference = 5A68C99E2500BD8200D52057 /* MADS Flytbase AsgnTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A68C9A82500BD8200D52057 /* MADS Flytbase AsgnUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A68C9B82500BD8200D52057 /* Build configuration list for PBXNativeTarget "MADS Flytbase AsgnUITests" */;
+			buildPhases = (
+				264508F44FE48BAB413E2DEC /* [CP] Check Pods Manifest.lock */,
+				5A68C9A52500BD8200D52057 /* Sources */,
+				5A68C9A62500BD8200D52057 /* Frameworks */,
+				5A68C9A72500BD8200D52057 /* Resources */,
+				A3E4C3AFD3AEC283A608C7DC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A68C9AB2500BD8200D52057 /* PBXTargetDependency */,
+			);
+			name = "MADS Flytbase AsgnUITests";
+			productName = "MADS Flytbase AsgnUITests";
+			productReference = 5A68C9A92500BD8200D52057 /* MADS Flytbase AsgnUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A68C9802500BD7F00D52057 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Persausive Tech";
+				TargetAttributes = {
+					5A68C9872500BD7F00D52057 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					5A68C99D2500BD8200D52057 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 5A68C9872500BD7F00D52057;
+					};
+					5A68C9A82500BD8200D52057 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 5A68C9872500BD7F00D52057;
+					};
+				};
+			};
+			buildConfigurationList = 5A68C9832500BD7F00D52057 /* Build configuration list for PBXProject "MADS Flytbase Asgn" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A68C97F2500BD7F00D52057;
+			productRefGroup = 5A68C9892500BD7F00D52057 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A68C9872500BD7F00D52057 /* MADS Flytbase Asgn */,
+				5A68C99D2500BD8200D52057 /* MADS Flytbase AsgnTests */,
+				5A68C9A82500BD8200D52057 /* MADS Flytbase AsgnUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A68C9862500BD7F00D52057 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A68C9982500BD8200D52057 /* LaunchScreen.storyboard in Resources */,
+				5A0A6E25250118A800186940 /* GoogleService-Info.plist in Resources */,
+				5A68C9952500BD8200D52057 /* Assets.xcassets in Resources */,
+				5A68C9932500BD7F00D52057 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A68C99C2500BD8200D52057 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A68C9A72500BD8200D52057 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2041333FBCF806ACB418F93A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MADS Flytbase Asgn/Pods-MADS Flytbase Asgn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MADS Flytbase Asgn/Pods-MADS Flytbase Asgn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MADS Flytbase Asgn/Pods-MADS Flytbase Asgn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		264508F44FE48BAB413E2DEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MADS Flytbase Asgn-MADS Flytbase AsgnUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3E4C3AFD3AEC283A608C7DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MADS Flytbase Asgn-MADS Flytbase AsgnUITests/Pods-MADS Flytbase Asgn-MADS Flytbase AsgnUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MADS Flytbase Asgn-MADS Flytbase AsgnUITests/Pods-MADS Flytbase Asgn-MADS Flytbase AsgnUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MADS Flytbase Asgn-MADS Flytbase AsgnUITests/Pods-MADS Flytbase Asgn-MADS Flytbase AsgnUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5755363FD9CD250BA9CE5F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MADS Flytbase AsgnTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC36CA6C2A1C660D5770282E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MADS Flytbase Asgn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A68C9842500BD7F00D52057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A0A6E2125010BEA00186940 /* History.swift in Sources */,
+				5A68C9902500BD7F00D52057 /* ViewController.swift in Sources */,
+				5A68C98C2500BD7F00D52057 /* AppDelegate.swift in Sources */,
+				5A0A6E2725011E0300186940 /* LoginViewController.swift in Sources */,
+				5A0A6E232501142900186940 /* HistoryViewController.swift in Sources */,
+				5A0A6E2925013A7600186940 /* Constant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A68C99A2500BD8200D52057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A68C9A32500BD8200D52057 /* MADS_Flytbase_AsgnTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A68C9A52500BD8200D52057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A68C9AE2500BD8200D52057 /* MADS_Flytbase_AsgnUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5A68C9A02500BD8200D52057 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A68C9872500BD7F00D52057 /* MADS Flytbase Asgn */;
+			targetProxy = 5A68C99F2500BD8200D52057 /* PBXContainerItemProxy */;
+		};
+		5A68C9AB2500BD8200D52057 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A68C9872500BD7F00D52057 /* MADS Flytbase Asgn */;
+			targetProxy = 5A68C9AA2500BD8200D52057 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5A68C9912500BD7F00D52057 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A68C9922500BD7F00D52057 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A68C9962500BD8200D52057 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A68C9972500BD8200D52057 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A68C9B02500BD8200D52057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A68C9B12500BD8200D52057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A68C9B32500BD8200D52057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C58972395D197B445A6B6E6 /* Pods-MADS Flytbase Asgn.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YHL6YP9PRW;
+				INFOPLIST_FILE = "MADS Flytbase Asgn/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Persausive-Technologies.MADS-Flytbase-Asgn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A68C9B42500BD8200D52057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7617E3BFBE9E6DF5A335453 /* Pods-MADS Flytbase Asgn.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YHL6YP9PRW;
+				INFOPLIST_FILE = "MADS Flytbase Asgn/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Persausive-Technologies.MADS-Flytbase-Asgn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5A68C9B62500BD8200D52057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61C392C0B723D3AFD9A934A0 /* Pods-MADS Flytbase AsgnTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YHL6YP9PRW;
+				INFOPLIST_FILE = "MADS Flytbase AsgnTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Persausive-Technologies.MADS-Flytbase-AsgnTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MADS Flytbase Asgn.app/MADS Flytbase Asgn";
+			};
+			name = Debug;
+		};
+		5A68C9B72500BD8200D52057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60A23F1BA5930A50567130AD /* Pods-MADS Flytbase AsgnTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YHL6YP9PRW;
+				INFOPLIST_FILE = "MADS Flytbase AsgnTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Persausive-Technologies.MADS-Flytbase-AsgnTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MADS Flytbase Asgn.app/MADS Flytbase Asgn";
+			};
+			name = Release;
+		};
+		5A68C9B92500BD8200D52057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F87FF5879CC8609F7E9014F /* Pods-MADS Flytbase Asgn-MADS Flytbase AsgnUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YHL6YP9PRW;
+				INFOPLIST_FILE = "MADS Flytbase AsgnUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Persausive-Technologies.MADS-Flytbase-AsgnUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MADS Flytbase Asgn";
+			};
+			name = Debug;
+		};
+		5A68C9BA2500BD8200D52057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECA0AA99F306B1A37ED8D4C6 /* Pods-MADS Flytbase Asgn-MADS Flytbase AsgnUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YHL6YP9PRW;
+				INFOPLIST_FILE = "MADS Flytbase AsgnUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Persausive-Technologies.MADS-Flytbase-AsgnUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MADS Flytbase Asgn";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A68C9832500BD7F00D52057 /* Build configuration list for PBXProject "MADS Flytbase Asgn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A68C9B02500BD8200D52057 /* Debug */,
+				5A68C9B12500BD8200D52057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A68C9B22500BD8200D52057 /* Build configuration list for PBXNativeTarget "MADS Flytbase Asgn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A68C9B32500BD8200D52057 /* Debug */,
+				5A68C9B42500BD8200D52057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A68C9B52500BD8200D52057 /* Build configuration list for PBXNativeTarget "MADS Flytbase AsgnTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A68C9B62500BD8200D52057 /* Debug */,
+				5A68C9B72500BD8200D52057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A68C9B82500BD8200D52057 /* Build configuration list for PBXNativeTarget "MADS Flytbase AsgnUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A68C9B92500BD8200D52057 /* Debug */,
+				5A68C9BA2500BD8200D52057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5A68C9802500BD7F00D52057 /* Project object */;
+}

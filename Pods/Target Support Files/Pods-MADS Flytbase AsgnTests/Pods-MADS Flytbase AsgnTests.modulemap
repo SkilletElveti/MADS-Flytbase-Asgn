@@ -1,0 +1,6 @@
+framework module Pods_MADS_Flytbase_AsgnTests {
+  umbrella header "Pods-MADS Flytbase AsgnTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
