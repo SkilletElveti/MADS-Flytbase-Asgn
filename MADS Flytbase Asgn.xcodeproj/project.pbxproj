@@ -600,7 +600,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YHL6YP9PRW;
+				DEVELOPMENT_TEAM = 8B953K4DUU;
 				INFOPLIST_FILE = "MADS Flytbase Asgn/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -619,7 +619,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YHL6YP9PRW;
+				DEVELOPMENT_TEAM = 8B953K4DUU;
 				INFOPLIST_FILE = "MADS Flytbase Asgn/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
