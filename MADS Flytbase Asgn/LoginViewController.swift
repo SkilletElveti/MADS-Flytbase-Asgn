@@ -36,6 +36,8 @@ class LoginViewController: UIViewController {
             registerNotification()
         passwordTextField.isSecureTextEntry = true
         self.loginBtn.addTarget(self, action: #selector(login), for: .touchUpInside)
+        addDoneButtonOnKeyboard(textField: self.usernameTextField)
+        addDoneButtonOnKeyboard(textField: passwordTextField)
     }
     
   @IBAction func login(){

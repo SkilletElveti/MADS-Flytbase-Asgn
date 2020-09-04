@@ -57,7 +57,7 @@ class HistoryViewController: UIViewController {
                 var count = 0
                 for document in querySnapshot!.documents {
                     count += 1
-                    print("\(document.documentID) => \(document.data())")
+                  //  print("\(document.documentID) => \(document.data())")
                     let some = document.data()
                     var hist: History = History()
                     let name: String = "\(some["NAME"]!)"
@@ -83,6 +83,42 @@ class HistoryViewController: UIViewController {
         
     }
     
+    @objc func deleteFunc(_ sender: UITapGestureRecognizer){
+        if let view = sender.view{
+            let index = view.tag
+            self.db.collection("FRESH")
+            .getDocuments() { (querySnapshot, err) in
+                if let err = err {
+                    // Some error occured
+                } else {
+                    for document in querySnapshot!.documents{
+                        let data = document.data()
+                        let name: String = data["NAME"] as! String
+                        let id = self.history[index].id
+                        
+                        if document.documentID ==  id && name == UserDefaults.standard.string(forKey: Constant.first_name)!{
+                            
+                            self.db.collection("FRESH").document(document.documentID).updateData([
+                               "NAME": ""
+                            ]) { err in
+                                if let err = err {
+                                    print("Error updating document: \(err)")
+                                } else {
+                                    print("Document successfully updated")
+                                    self.history.remove(at: index)
+                                    self.historyTable.reloadData()
+                                                    
+                                }
+                            }
+                            
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 
 
 }
@@ -96,45 +132,11 @@ extension HistoryViewController: UITableViewDelegate, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "HistoryCell") as! HistoryCell
         cell.resultLabel.text = "Result: " + history[indexPath.row].result
         cell.inputLabel.text = "Input: " + history[indexPath.row].input
+        cell.delete.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(deleteFunc(_:))))
+        cell.delete.tag = indexPath.row
         return cell
     }
     
-     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            //DOCUMENT REFERENCE WONT GET REMOVED
-//            self.db.collection("users").document(self.history[indexPath.row].id).delete() { err in
-//                if let err = err {
-//                    print("Error removing document: \(err)"
-//                } else {
-//                    print("Document successfully removed!")
-//                    self.history.remove(at: indexPath.row)
-//                    self.historyTable.deleteRows(at: [indexPath], with: .fade)
-//                }
-//            }
-            
-            
-            self.db.collection("FRESH")
-                .whereField("NAME", isEqualTo: UserDefaults.standard.string(forKey: Constant.first_name))
-            .getDocuments() { (querySnapshot, err) in
-                if let err = err {
-                    // Some error occured
-                } else {
-                    for document in querySnapshot!.documents{
-                        if document.documentID ==  self.history[indexPath.row].id{
-                            document.reference.updateData([
-                                "NAME": ""
-                            ])
-                            self.history.remove(at: indexPath.row)
-                            self.historyTable.deleteRows(at: [indexPath], with: .fade)
-                        }
-                    }
-                }
-            }
-           
-        } else if editingStyle == .insert {
-            
-        }
-    }
 }
 
 
@@ -143,7 +145,7 @@ class HistoryCell: UITableViewCell {
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var inputLabel: UILabel!
     @IBOutlet weak var parentView: UIView!
-    
+    @IBOutlet weak var delete: UIButton!
 }
 
 
