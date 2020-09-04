@@ -141,15 +141,21 @@ class ViewController: UIViewController {
     var temp: String = ""
        
     func createSubArrays(){
+        
+        //CREATING TWO SEPARATE SUBARRAYS ONE NUMERIC AND SECOND FOR OPERATION SYMBOL DATA
+        
         if input.first != "-" || input.first != "+" || input.first != "*" || input.first != "/" || input.last != "-" || input.last != "+" || input.last != "*" || input.last != "/"{
             for i in input{
                 
                 if i != "+" && i != "/" && i != "*" && i != "-"{
+                    
+                    //EXTRACTING NUMERIC DATA
                     temp.append(i)
                     tempCount += 1
                     
                 }else{
                     
+                    //EXTRACTING SYMBOLIC DATA
                     tempCount += 1
                     let doubleValue = Int(temp)
                     self.digits.append(doubleValue!)
@@ -191,6 +197,9 @@ class ViewController: UIViewController {
                 break
            
             case "*":
+                
+                //PERFORMING MULTIPLICATION AT INDEX AND INDEX + 1 POSITION THEN REMOVING THE * FROM SYMBOL ARRAY AT SAME INDEX POSITION. THE RESULT IS THEN STORED AT INDEX POSITION IN NUMERIC ARRAY AND NUMERIC DATA AT INDEX + 1 POSITION IS REMOVED.
+                
                 digits[index] = left * right
                 symbols.remove(at: index)
                 digits.remove(at: index + 1)
@@ -216,6 +225,9 @@ class ViewController: UIViewController {
             for i in 0 ..< count{
                 
                if let index = symbols.firstIndex(of: "*"){
+                
+                //ON FIRST APPEARANCE OF * IN SYMBOL ARRAY AT AN INDEX POSITION, MULTIPLICATION OPPERATION IS PERFORMED ON THE NUMERIC DATA PRESENT IN NUMERIC ARRAY AT INDEX AND INDEX + 1 POSITION #M. 
+                
                    evaluate(operation: "*", left: digits[index], right:  digits[index + 1 ] , index: index )
                    if i == count - 1{
                         self.displayOutput()
@@ -408,6 +420,7 @@ class ViewController: UIViewController {
                 
                
                    if input.first != "-" && input.first != "+" && input.first != "*" && input.first != "/" && input.last != "-" && input.last != "+" && input.last != "*" && input.last != "/"{
+                    
                         if input.contains("+") || input.contains("*") || input.contains("/") || input.contains("-"){
                             
                              validate()
@@ -459,6 +472,8 @@ class ViewController: UIViewController {
         revCount = 0
         for i in input{
             revCount += 1
+            
+            //CHECKING FOR CONSECUTIVE OCCURRANCE OF +-/*. IF THERE IS NO CONSECUTIVE OCCURANCE THEN revFlag IS SET TO FALSE
             if  revFlag == true && (i == "+" || i == "*" || i == "/" || i == "-"){
                
                 revFlag = false
@@ -468,11 +483,13 @@ class ViewController: UIViewController {
                  revFlag = false
             }
             
+            //CHECKING FOR +-/*
             if i == "+" || i == "*" || i == "/" || i == "-"{
                 revFlag = true
                 continue
             }
             
+            //IF ITS THE LAST ELEMENT OF THE INPUT STRING AND HAS CLEARIFIED THE VALIDATION THEN createSubArrays IS CALLED
              if revCount == input.count {
                 revCount = 0
                 historyObj = History()
@@ -498,11 +515,15 @@ extension ViewController: UITextFieldDelegate{
         if !textField.text!.isEmpty{
             self.view.endEditing(true)
             self.input = self.displayLabel.text!
-           
+            
+           //FIRST OR LAST ELEMENT SHOULD NOT BE OPERATIONAL SYMBOL
             if input.first != "-" && input.first != "+" && input.first != "*" && input.first != "/" && input.last != "-" && input.last != "+" && input.last != "*" && input.last != "/"{
+                
+                //INPUT STRING CONTAIN OPERATIONAL SYMBOLS
                 if input.contains("+") || input.contains("*") || input.contains("/") || input.contains("-"){
                     
                     validate()
+                    
                 }
             }
             
