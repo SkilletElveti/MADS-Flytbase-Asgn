@@ -101,16 +101,36 @@ extension HistoryViewController: UITableViewDelegate, UITableViewDataSource{
     
      func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            self.db.collection("users").document(self.history[indexPath.row].id).delete() { err in
+            //DOCUMENT REFERENCE WONT GET REMOVED
+//            self.db.collection("users").document(self.history[indexPath.row].id).delete() { err in
+//                if let err = err {
+//                    print("Error removing document: \(err)"
+//                } else {
+//                    print("Document successfully removed!")
+//                    self.history.remove(at: indexPath.row)
+//                    self.historyTable.deleteRows(at: [indexPath], with: .fade)
+//                }
+//            }
+            
+            
+            self.db.collection("FRESH")
+                .whereField("NAME", isEqualTo: UserDefaults.standard.string(forKey: Constant.first_name))
+            .getDocuments() { (querySnapshot, err) in
                 if let err = err {
-                    print("Error removing document: \(err)")
+                    // Some error occured
                 } else {
-                    print("Document successfully removed!")
-                    self.history.remove(at: indexPath.row)
-                    self.historyTable.deleteRows(at: [indexPath], with: .fade)
+                    for document in querySnapshot!.documents{
+                        if document.documentID ==  self.history[indexPath.row].id{
+                            document.reference.updateData([
+                                "NAME": ""
+                            ])
+                            self.history.remove(at: indexPath.row)
+                            self.historyTable.deleteRows(at: [indexPath], with: .fade)
+                        }
+                    }
                 }
             }
-            
+           
         } else if editingStyle == .insert {
             
         }

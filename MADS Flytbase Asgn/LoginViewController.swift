@@ -34,6 +34,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
             super.viewDidLoad()
             registerNotification()
+        passwordTextField.isSecureTextEntry = true
         self.loginBtn.addTarget(self, action: #selector(login), for: .touchUpInside)
     }
     
